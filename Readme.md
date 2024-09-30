@@ -130,7 +130,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - MySQL Team
 - Lombok Team
 ```
-
-### Customization
-
-Make sure to replace placeholders like `yourusername`, `your-repo-name`, and `your_database_name` with the actual values relevant to your project. You can also expand the usage section with more detailed examples as needed.
