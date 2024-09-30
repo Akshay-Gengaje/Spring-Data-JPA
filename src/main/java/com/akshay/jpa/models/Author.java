@@ -1,24 +1,19 @@
 package com.akshay.jpa.models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-public class Author {
-    @Id
-//    @GeneratedValue(
-//        strategy = GenerationType.SEQUENCE,
-//        generator = "author_sequence"
-//    )
-//    @SequenceGenerator(
-//            name = "author_sequence",
-//            sequenceName = "author_sequence",
-//            allocationSize = 1
-//    )
-    @GeneratedValue
-    private Integer id;
+public class Author extends BaseEntity{
     @Column(length = 35)
     private String firstName;
     @Column(length = 35)

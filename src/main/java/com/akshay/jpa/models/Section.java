@@ -2,15 +2,14 @@ package com.akshay.jpa.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-public class Section {
-    @Id
-    @GeneratedValue
-    private Integer id;
+public class Section extends BaseEntity{
     private String name;
     private int sectionOrder;
     @ManyToOne()
